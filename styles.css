@@ -1,0 +1,280 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #3d2e55;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font: bold;
+    font-size: large;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-right: 50px;
+}
+
+header a.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+header .logo .in-no {
+    font-family: 'Roboto', sans-serif; /* Font for "In no" */
+    font-weight: 700; /* Bold "In no" */
+}
+
+header .logo .time {
+    font-family: 'Georgia', serif; /* Font for "Time" */
+    font-weight: 400; /* Regular "Time" */
+}
+
+header nav a{
+    color: #fff;
+
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative; /* Needed for pseudo-element positioning */
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position below the text */
+    width: 0; /* Start with no width */
+    height: 2px; /* Thickness of the line */
+    background-color: #fff;
+    transition: width 0.3s ease; /* Smooth animation */
+}
+
+header nav ul li a:hover::after {
+    width: 100%; /* Full width on hover */
+    
+}
+header button#darkModeToggle {
+    margin-left: auto;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.branding {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    text-align: left;
+}
+
+.branding h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.branding p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.search-bar {
+    display: flex;
+    margin-left: 500px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #19b8e0;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button :hover{
+    background-color: #7f9ec0;
+}
+
+/* Style for hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: rgb(17, 15, 15);
+}
+
+.hero-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero p{
+    font-family: 'Georgia', serif; /* Font for "Time" */
+    font-weight: 400; /* Regular "Time" */
+    font-size: 30px;
+    margin-left: -700px;
+    color: #333;
+}
+
+.hero .in-no {
+    font-family: 'Roboto', sans-serif; /* Font for "In no" */
+    font-weight: 700; /* Bold "In no" */
+    font-size: 80px;
+    margin-left: -1000px;
+    color: #3d2e55;
+}
+.hero .time {
+    font-family: 'Georgia', serif; /* Font for "Time" */
+    font-weight: 400; /* Regular "Time" */
+    font-size: 80px;
+    margin-left: -1050px;
+    color: #3d2e55;
+}
+
+.hero .in-no,
+.hero time{
+    display: block; /* Forces each word to appear on its own line */
+}
+
+
+
+/* Animation for fading in */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Blog Posts */
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.posts article {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.posts h2 a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+}
+.posts h2 a:hover {
+    text-decoration: underline;
+}
+
+
+body.dark-mode {
+    background: #333;
+    color: #fff;
+}
+/* Footer Styles */
+footer {
+    background-color: #3d2e55;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Newsletter Section */
+.newsletter {
+    margin-top: 20px;
+}
+
+.newsletter h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #19b8e0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #444;
+}
+
