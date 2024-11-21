@@ -1,14 +1,16 @@
 <footer>
-    <p>&copy; 2024 My Blog. All rights reserved.</p>
+    <p>&copy; 2024 INT. All rights reserved.</p>
 
-    <!-- Newsletter Subscription -->
-    <div class="newsletter">
-        <h3>Subscribe to Our Newsletter</h3>
-        <form action="subscribe.php" method="POST" class="newsletter-form">
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
+    <section class="cta">
+        <div class="container">
+            <h2>Join Us</h2>
+            <p>Stay informed and secure. Subscribe to our newsletter for the latest updates!</p>
+            <form class="newsletter-form" action="subscribe.php" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
 </footer>
 </body>
 </html>
