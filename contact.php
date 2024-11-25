@@ -2,8 +2,8 @@
 
 <main class="contact-page">
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
+    <section class="contact-hero">
+        <div class="contact-hero-content">
             <h1>Contact Us</h1>
             <p>We'd love to hear from you! Reach out with any questions or inquiries.</p>
         </div>

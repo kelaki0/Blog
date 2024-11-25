@@ -2,8 +2,8 @@
 
 <main class="about-page">
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
+    <section class="about-hero">
+        <div class="about-hero-content">
             <h1>About Us</h1>
             <p>Your journey into cybersecurity excellence begins here.</p>
         </div>
@@ -18,17 +18,17 @@
     </section>
 
     <!-- Team Section -->
-    <section class="team">
+    <section class="about-team">
         <div class="container">
             <h2>Meet the Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="assets/img/team1.jpg" alt="Team Member 1">
+            <div class="about-team-grid">
+                <div class="about-team-member">
+                    <img src="assets/img/member.jpg" alt="Team Member 1">
                     <h3>John Doe</h3>
                     <p>Cybersecurity Expert</p>
                 </div>
-                <div class="team-member">
-                    <img src="assets/img/team2.jpg" alt="Team Member 2">
+                <div class="about-team-member">
+                    <img src="assets/img/member2.jpg" alt="Team Member 2">
                     <h3>Jane Smith</h3>
                     <p>Content Strategist</p>
                 </div>
@@ -37,7 +37,7 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="mission">
+    <section class="about-mission">
         <div class="container">
             <h2>Our Mission</h2>
             <p>We aim to provide practical, actionable advice to help you stay safe in the digital world. Your security is our priority.</p>

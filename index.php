@@ -15,7 +15,7 @@
     <!-- Main Content Section -->
     <section class="content">
         <!-- Sidebar for Topics -->
-        <aside class="sidebar">
+        <aside class="index-sidebar">
             <h3>Main Topics</h3>
             <ul>
                 <li><a href="topic1.php">Network Security</a></li>
