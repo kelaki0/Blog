@@ -32,7 +32,7 @@ body {
 
 /* Header */
 header {
-    background: #3d2e55;
+    background: #3c3447;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -186,7 +186,7 @@ header button#darkModeToggle {
     width: 100%;
     height: 700px;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 .hero-text {
@@ -222,8 +222,7 @@ header button#darkModeToggle {
     font-weight: 400; /* Regular "Time" */
     font-size: 80px;
     margin-left: -1050px;
-    color: #3d2e55;
-    margin-top: 10px;
+    color: #110625;
 }
 
 .hero .in-no,
