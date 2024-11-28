@@ -332,124 +332,148 @@ header button#darkModeToggle {
 /* Home page */
 
 /* Blog Page */
-
-.posts-page h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #3d2e55;
-    margin-top: 150px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    margin-top: 120px;
 }
 
-.posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    
 }
 
-.post {
-    background: #f9f9f9;
+.blog-card {
+    background: white;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
 }
 
-.post-thumbnail {
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    height: 180px;
+    object-fit: cover;
 }
 
-.post h2 {
+.blog-content {
+    padding: 15px;
+}
+
+.blog-content h2 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #3d2e55;
+    margin: 0;
 }
 
-.post h2 a {
-    text-decoration: none;
-    color: #3d2e55;
+.date {
+    color: #888;
+    font-size: 0.9rem;
+    margin: 10px 0;
 }
 
-.post h2 a:hover {
-    color: #FFD700;
-}
-
-.post p {
-    font-size: 1rem;
+.blog-content p {
     color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .read-more {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 15px;
-    background-color: #3d2e55;
-    color: #fff;
-    border-radius: 5px;
+    color: white;
+    background-color: #28a745;
+    padding: 10px 15px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 0.9rem;
 }
 
 .read-more:hover {
-    background-color: #FFD700;
+    background-color: #218838;
+}
+/* Blog */
+
+/* Post page styles */
+.post-page .post-container {
+    width: 80%; /* Makes the content 80% of the viewport width */
+    max-width: 1200px; /* Maximum width to prevent it from growing too large */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px;
 }
 
-.sidebar {
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Header and title */
+.post-page h1 {
+    text-align: center; /* Center-align the title */
+    font-size: 2.5rem; /* Larger title */
+    margin-bottom: 20px;
 }
 
-.sidebar h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: #3d2e55;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.sidebar ul li a:hover {
-    color: #FFD700;
-}
-.pagination {
+/* Article styling */
+.post-page article {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center; /* Center content inside the article */
+    text-align: center;
 }
 
-.pagination a {
+.post-page article img {
+    max-width: 100%; /* Prevents the image from exceeding the container width */
+    height: 400px; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+/* Date styling */
+.post-page .date {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.post-page p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px; /* Prevents the text from stretching too wide */
+    margin: 0 auto; /* Centers the paragraph */
+    padding: 0 20px;
+}
+
+/* Back link */
+.post-page #back-to-blog {
+    display: inline-block;
     text-decoration: none;
-    color: #3d2e55;
+    color: #007BFF;
+    margin-top: 30px;
+    font-size: 1rem;
+    text-align: center;
     padding: 10px 15px;
-    margin: 0 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #007BFF;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-.pagination a:hover {
-    background-color: #3d2e55;
-    color: #fff;
+.post-page #back-to-blog:hover {
+    background-color: #f1f1f1;
+    color: #0056b3;
+    border-color: #0056b3;
 }
-/* Blog page */
 
 
 /* Footer Styles */
@@ -702,4 +726,5 @@ button[type="submit"]:hover {
 }
 
 /* Contact */
+
 

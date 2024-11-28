@@ -1,5 +1,5 @@
 <footer>
-    <p>&copy; 2024 INT. All rights reserved.</p>
+   
 
     <section class="cta">
         <div class="container">
@@ -11,6 +11,9 @@
             </form>
         </div>
     </section>
+
+    <p>&copy; 2024 INT. All rights reserved.</p>
+    
 </footer>
 </body>
 </html>
