@@ -414,6 +414,7 @@ body {
     max-width: 1200px; /* Maximum width to prevent it from growing too large */
     margin: 0 auto; /* Centers the content horizontally */
     padding: 20px;
+    
 }
 
 /* Header and title */
