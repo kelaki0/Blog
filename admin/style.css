@@ -14,15 +14,53 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
+    background-image: url('bg.jpg');
+    background-size: cover;  /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+}
+/* Error message styling */
+.error-message {
+    color: rgb(180, 21, 21);
+    font-size: 1em;
+    margin-top: 5px;
+    display: block;
 }
 
-/* Form container styling */
+/* Style the form container */
 .form-container {
-    background-color: white; /* White background for the form */
     padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    width: 300px; /* Fixed width for the form */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #574e4e;
+    color: #ddd;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #534caf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#admin-password {
+    width: 100%;  /* This makes the input field span the container width */
+    max-width: 500px; /* Optional: Set max width to prevent the input from becoming too wide */
+    padding: 10px;
+    box-sizing: border-box; /* Makes sure padding doesn't affect width */
 }
 
 /* Heading styling */
@@ -36,30 +74,6 @@ label {
     font-weight: bold; /* Bold labels for better visibility */
 }
 
-input[type="email"],
-input[type="password"] {
-    width: 100%; /* Full width inputs */
-    padding: 10px; /* Padding inside inputs */
-    margin-top: 5px; /* Spacing above inputs */
-    margin-bottom: 15px; /* Spacing below inputs */
-    border: 1px solid #ccc; /* Light border color */
-    border-radius: 4px; /* Slightly rounded corners for inputs */
-}
-
-/* Button styling */
-button {
-    background-color: #5cb85c; /* Bootstrap success color */
-    color: white; /* White text on button */
-    border: none; /* No border for the button */
-    padding: 10px; /* Padding inside the button */
-    border-radius: 4px; /* Slightly rounded corners for button */
-    cursor: pointer; /* Pointer cursor on hover */
-    width: 100%; /* Full width button */
-}
-
-button:hover {
-    background-color: #4cae4c; /* Darker green on hover */
-}
 /* register admin */
 
 /* admin login */
@@ -126,5 +140,27 @@ input[type="password"] {
 
 .login-btn:hover {
     background-color: #4cae4c; /* Darker green on hover */
+}
+
+#password-strength {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    margin-top: 50px;
+}
+
+#strength-bar {
+    height: 100%;
+    width: 0;
+    background-color: red;
+}
+
+/* Make checkbox appear on a new line */
+.show-password-container {
+    margin-top: 10px;
+}
+
+#show-password {
+    margin-left: 10px;
 }
 

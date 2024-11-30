@@ -10,10 +10,10 @@
         <h2>Admin Login</h2>
         <form method="POST" action="admin_login_process.php">
             <label for="admin-email">Email:</label>
-            <input type="email" id="admin-email" name="email" required><br><br>
+            <input type="email" id="admin-email" name="email" required placeholder="Enter email"><br><br>
             
             <label for="admin-password">Password:</label>
-            <input type="password" id="admin-password" name="password" required><br><br>
+            <input type="password" id="admin-password" name="password" required placeholder="Enter password"><br><br>
 
             <button type="submit">Login</button>
         </form>
