@@ -8,8 +8,7 @@ body, h2, form {
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light background color */
-    color: #333; /* Dark text color */
+    color: #070606; /* Dark text color */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,12 +28,32 @@ body {
 }
 
 /* Style the form container */
+
 .form-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; /* Centers the container */
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #574e4e;
-    color: #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+
+/* Specific styling for the name field */
+.name-field {
+    width: 100%; /* Full width within its container */
+    padding: 10px; /* Space inside the input */
+    border: 2px solid #3498db; /* Light blue border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the width/height */
+    background-color: #f9f9f9; /* Slightly off-white background */
+    font-size: 1rem; /* Font size for better readability */
+}
+
+/* Label styling specific to the name field */
+.field-label {
+    font-weight: bold; /* Bold for better visibility */
+    color: #08090a; /* Neutral dark color */
 }
 
 input[type="email"],
@@ -85,7 +104,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+   
 }
 
 /* Login container styling */
@@ -94,7 +113,7 @@ body {
     padding: 20px;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    width: 300px; /* Fixed width for the form */
+    width: 200px; /* Fixed width for the form */
 }
 
 /* Heading styling */
@@ -109,14 +128,41 @@ h2 {
     text-align: center; /* Centered error message */
 }
 
-/* Form group styling */
+/* Form group styling (applies to role as well) */
 .form-group {
     margin-bottom: 15px; /* Spacing between form groups */
 }
 
-/* Label and input styling */
+/* Form elements */
 label {
-    font-weight: bold; /* Bold labels for better visibility */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/* Dropdown styling for role selection */
+select {
+    width: 100%; /* Full width dropdown */
+    padding: 10px; /* Padding inside dropdown */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text */
+    font-size: 1rem; /* Adjust font size for better readability */
+    cursor: pointer; /* Pointer cursor to indicate clickable dropdown */
+}
+
+/* Dropdown focus styling */
+select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #5cb85c; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5); /* Subtle green glow */
+}
+
+/* Error message styling for dropdown */
+.error-message {
+    color: red; /* Red text for error messages */
+    font-size: 0.9rem; /* Slightly smaller text size */
+    margin-top: 5px; /* Spacing above the error message */
 }
 
 input[type="email"],
@@ -144,9 +190,8 @@ input[type="password"] {
 
 #password-strength {
     width: 100%;
-    height: 10px;
+    height: 5px;
     background-color: #ddd;
-    margin-top: 50px;
 }
 
 #strength-bar {
@@ -164,3 +209,129 @@ input[type="password"] {
     margin-left: 10px;
 }
 
+/* Admin Dashboard Styling */
+.dashboard-container {
+    width: 100%;
+    max-width: 900px; /* Makes sure it doesn't stretch too wide */
+    background-color: rgba(75, 69, 69, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d9dde0; /* Dark color for the main heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #ade3e7; /* Lighter text for the email */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.actions, .admin-actions {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #34495e; /* Slightly different color for subheadings */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    text-align: center; /* Center the links */
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #3498db; /* Light blue color for links */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+ul li a:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+ul li a:focus {
+    outline: none;
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+}
+
+.admin-actions ul li a {
+    color: #3498db; /* Red color for admin management links */
+}
+
+.admin-actions ul li a:hover {
+    color: #c0392b; /* Darker red on hover */
+}
+
+/* Log out link styling */
+/* Style the logout button */
+.logout-button {
+    display: inline-block; /* Makes it behave like a button */
+    padding: 10px 20px; /* Space inside the button */
+    background-color: #ff4d4d; /* Red background color */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centers the text */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect */
+.logout-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Container for the logout button */
+.logout-container {
+    text-align: center; /* Center the button horizontally */
+    margin-top: 20px; /* Space above the button */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+}
+/* Admin Dashboard */

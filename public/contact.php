@@ -12,7 +12,7 @@
     <!-- Contact Information -->
     <section class="contact-info">
         <div class="container">
-            <h2>Get in Touch</h2>
+            <h2>Get in Touch</h2>   
             <div class="info-grid">
                 <div class="info-item">
                     <h3>Email</h3>
