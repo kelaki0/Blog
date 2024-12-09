@@ -22,7 +22,7 @@ Primary Functionalities
         3. Case Studies
         4. Career Tips for easy navigation.
 
-       Search Functionality:
+    Search Functionality:
         Readers can search posts using keywords or tags.
 
 2. User Authentication
