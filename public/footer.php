@@ -7,7 +7,7 @@
             <p>Stay informed and secure. Subscribe to our newsletter for the latest updates!</p>
             <form class="newsletter-form" action="subscribe.php" method="POST">
                 <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
+                <button type="submit-button">Subscribe</button>
             </form>
         </div>
     </section>

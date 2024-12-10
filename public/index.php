@@ -3,12 +3,14 @@
 <!-- Main Content -->
 <main>
     <!-- Hero Section -->
-    <section class="hero">
-        <img src="assets/img/net.jpg" alt="Cybersecurity" class="hero-image">
-        <div class="hero-text">
-            <span class="in-no">IN NO</span>
-            <span class="time">TIME</span>
-
+    <section class="home-hero">
+        <img src="assets/img/back.jpg" loading="lazy" alt="Cybersecurity" class="home-hero-image">
+        <div class="home-hero-text-container">
+            <div class="home-hero-text">
+                <span class="in-no">IN NO</span>
+                <span class="time">TIME</span>
+            </div>
+            <p class="home-hero-subtext">Empowering cybersecurity <br> solutions at your fingertips.</p>
         </div>
     </section>
 
@@ -45,7 +47,5 @@
         </section>
     </section>
 </main>
-
-
 
 <?php include 'footer.php'; ?>

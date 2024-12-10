@@ -16,15 +16,15 @@
             <div class="info-grid">
                 <div class="info-item">
                     <h3>Email</h3>
-                    <p><a href="mailto:info@cybersecurityblog.com">info@cybersecurityblog.com</a></p>
+                    <p><a href="mailto:info@cybersecurityblog.com">info@intsecurity.com</a></p>
                 </div>
                 <div class="info-item">
                     <h3>Phone</h3>
-                    <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+                    <p><a href="tel:+1234567890">0795765046 / 0759696452</a></p>
                 </div>
                 <div class="info-item">
                     <h3>Address</h3>
-                    <p>123 Cyber Street, Tech City, 56789</p>
+                    <p>20157 Kabarak, Kenya</p>
                 </div>
             </div>
         </div>
